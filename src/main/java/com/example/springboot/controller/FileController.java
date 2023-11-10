@@ -23,7 +23,8 @@ import java.io.IOException;
 public class FileController {
 
     private static final String ip = "http://localhost";
-    static String rootFilePath = System.getProperty("user.dir") + "/springboot/src/main/resources/files/";
+    //static String rootFilePath = System.getProperty("user.dir") + "/springboot/src/main/resources/files/";
+    static String rootFilePath = System.getProperty("user.dir") + "/src/main/resources/files/";
     static String originalFilename = "";
     private String port = "9090";
     @Resource

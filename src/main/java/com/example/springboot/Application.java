@@ -12,15 +12,15 @@ import java.util.Date;
 
 @SpringBootApplication
 @MapperScan("com.example.springboot.mapper")
-public class SpringbootApplication implements CommandLineRunner {
+public class Application implements CommandLineRunner {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(SpringbootApplication.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(Application.class);
     @Value("${server.port}")
     private int serverPort;
     Date date = new Date();
     String time = String.format("%tc", date);
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 
