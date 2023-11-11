@@ -1,4 +1,4 @@
-## 前端传送门-->[Spring Boot](https://spring.io/projects/spring-boot):
+## 前端传送门-->[DormManageSystem-Frontend](https://github.com/Leejieun-s/DormManageSystem-Frontend):
 
 # 高校宿舍管理系统后端部分
 
@@ -21,14 +21,11 @@
 - Fastjson: 用于JSON数据的序列化和反序列化。
 - Vue: 前端框架，用于构建用户界面。
 
-# 技术栈
-
-该项目使用以下技术栈进行开发：
 
 
 ## 快速开始
 
  - 克隆或下载项目代码到本地。
- - 配置MySQL数据库，创建数据库和相应的数据表。
+ - 配置MySQL数据库，创建数据库和相应的数据表，sql文件在`src/main/resources`目录下。
  - 修改application.yml。
 
