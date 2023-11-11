@@ -28,4 +28,4 @@
  - 克隆或下载项目代码到本地。
  - 配置MySQL数据库，创建数据库和相应的数据表，sql文件在`src/main/resources`目录下。
  - 修改application.yml。
-
+ - 运行application.java的main方法，控制台输出启动成功的信息就代表运行完成。
