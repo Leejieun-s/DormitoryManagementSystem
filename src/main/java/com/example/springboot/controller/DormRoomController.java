@@ -127,7 +127,7 @@ public class DormRoomController {
      */
     @GetMapping("/getEachBuildingStuNum/{num}")
     public Result<?> getEachBuildingStuNum(@PathVariable int num) {
-        ArrayList<Long> arrayList = new ArrayList();
+        ArrayList<Long> arrayList = new ArrayList<>();
         for (int i = 1; i <= num; i++) {
             Long eachBuildingStuNum = dormRoomService.getEachBuildingStuNum(i);
             arrayList.add(eachBuildingStuNum);

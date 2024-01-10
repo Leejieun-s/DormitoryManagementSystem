@@ -45,7 +45,7 @@ public class FileController {
         originalFilename = file.getOriginalFilename();
         System.out.println(originalFilename);
         //获取文件尾缀
-        String fileType = originalFilename.substring(originalFilename.lastIndexOf("."), originalFilename.length());
+        String fileType = originalFilename.substring(originalFilename.lastIndexOf("."));
 
         //重命名
         String uid = new UID().produceUID();

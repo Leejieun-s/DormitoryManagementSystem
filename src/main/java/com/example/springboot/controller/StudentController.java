@@ -28,7 +28,6 @@ public class StudentController {
         } else {
             return Result.error("-1", "添加失败");
         }
-
     }
 
     /**
