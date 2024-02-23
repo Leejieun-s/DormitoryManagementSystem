@@ -24,9 +24,8 @@ public class AdjustRoomServiceImpl extends ServiceImpl<AdjustRoomMapper, AdjustR
      */
     @Override
     public int addApply(AdjustRoom adjustRoom) {
-        int insert = adjustRoomMapper.insert(adjustRoom);
         //logger.trace("执行的 SQL 语句为：{}", insert);
-        return insert;
+        return adjustRoomMapper.insert(adjustRoom);
     }
 
     /**
@@ -37,8 +36,7 @@ public class AdjustRoomServiceImpl extends ServiceImpl<AdjustRoomMapper, AdjustR
         Page page = new Page<>(pageNum, pageSize);
         QueryWrapper<AdjustRoom> qw = new QueryWrapper<>();
         qw.like("username", search);
-        Page orderPage = adjustRoomMapper.selectPage(page, qw);
-        return orderPage;
+        return adjustRoomMapper.selectPage(page, qw);
     }
 
     /**
@@ -46,8 +44,7 @@ public class AdjustRoomServiceImpl extends ServiceImpl<AdjustRoomMapper, AdjustR
      */
     @Override
     public int deleteAdjustment(Integer id) {
-        int i = adjustRoomMapper.deleteById(id);
-        return i;
+        return adjustRoomMapper.deleteById(id);
     }
 
 
@@ -56,8 +53,7 @@ public class AdjustRoomServiceImpl extends ServiceImpl<AdjustRoomMapper, AdjustR
      */
     @Override
     public int updateApply(AdjustRoom adjustRoom) {
-        int i = adjustRoomMapper.updateById(adjustRoom);
-        return i;
+        return adjustRoomMapper.updateById(adjustRoom);
     }
 
 
